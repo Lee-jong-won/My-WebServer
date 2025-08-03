@@ -71,7 +71,6 @@ public class HttpRequest {
     public String getRequestPath(){
         return requestLine.getRequestPath();
     }
-
-
+    public HttpCookie getCookies(){ return new HttpCookie(getHeader("Cookie"));}
 
 }
